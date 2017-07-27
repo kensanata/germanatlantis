@@ -1,0 +1,1129 @@
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/.cvsignore,v
+Working file: .cvsignore
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.2
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 1999/06/20 23:43:45;  author: alex;  state: Exp;  lines: +1 -0
+ChangeLog added
+----------------------------
+revision 1.2
+date: 1999/05/24 21:33:37;  author: alex;  state: Exp;  lines: +2 -0
+language.c und language.h werden automatisch von mklang.pl erzeugt.
+----------------------------
+revision 1.1
+date: 1999/05/07 23:04:57;  author: alex;  state: Exp;
+.cvsignore contains patterns for archives (.tar.gz files),
+the working directory created to produce these (atlantis-VERSION dirs),
+and the executable itself (atlantis).
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/Attic/ChangeLog,v
+Working file: ChangeLog
+head: 1.6
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_71: 1.5
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 7;	selected revisions: 7
+description:
+----------------------------
+revision 1.6
+date: 1999/05/07 23:04:57;  author: alex;  state: dead;  lines: +0 -0
+.cvsignore contains patterns for archives (.tar.gz files),
+the working directory created to produce these (atlantis-VERSION dirs),
+and the executable itself (atlantis).
+----------------------------
+revision 1.5
+date: 1999/04/28 20:48:01;  author: alex;  state: Exp;  lines: +6 -0
+movewhere bug
+new output_map bug
+----------------------------
+revision 1.4
+date: 1999/04/28 20:20:28;  author: alex;  state: Exp;  lines: +4 -0
+output_map bug
+----------------------------
+revision 1.3
+date: 1999/04/21 20:10:16;  author: alex;  state: Exp;  lines: +8 -0
+Anpassungen an z-Koordinate aufgenommen.
+----------------------------
+revision 1.2
+date: 1999/04/03 18:27:38;  author: alex;  state: Exp;  lines: +24 -0
+z-Koordinate eingefuegt.  Kein Test.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/Makefile,v
+Working file: Makefile
+head: 1.5
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.4
+	Runde_71: 1.2
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 6;	selected revisions: 6
+description:
+----------------------------
+revision 1.5
+date: 1999/06/20 23:54:06;  author: alex;  state: Exp;  lines: +4 -1
+Added ChangeLog again, this time based on `cvs log'
+----------------------------
+revision 1.4
+date: 1999/05/24 21:21:54;  author: alex;  state: Exp;  lines: +8 -0
+TAGS target
+----------------------------
+revision 1.3
+date: 1999/05/07 23:17:37;  author: alex;  state: Exp;  lines: +1 -1
+ChangeLog aus den dependencies entfernt
+----------------------------
+revision 1.2
+date: 1999/05/07 22:27:47;  author: alex;  state: Exp;  lines: +1 -1
+changed one (wrong) instance of $(gcc) to $(CC)
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/atlantis.c,v
+Working file: atlantis.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.3
+	Runde_71: 1.2
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.3
+date: 1999/05/20 01:22:49;  author: alex;  state: Exp;  lines: +4 -2
+getunit: Falls eine Einheit angegeben wurde, die Nummer aber nicht
+gefunden wurdem wird getunit_text gesetzt!
+----------------------------
+revision 1.2
+date: 1999/04/03 18:26:15;  author: alex;  state: Exp;  lines: +3 -3
+Copyright auf 1999 verlaengert.
+
+	* atlantis.c (findregion): z-Koordinate.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/atlantis.h,v
+Working file: atlantis.h
+head: 1.8
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.6
+	Runde_71: 1.4
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 9;	selected revisions: 9
+description:
+----------------------------
+revision 1.8
+date: 1999/06/02 22:41:55;  author: alex;  state: Exp;  lines: +1 -1
+Immer noch mit \240 was geaendert.
+----------------------------
+revision 1.7
+date: 1999/05/26 21:59:12;  author: alex;  state: Exp;  lines: +1 -1
+Changed SPACE_REPLACEMENT from '_' to "\240" -- NO-BREAK SPACE in latin-1.
+----------------------------
+revision 1.6
+date: 1999/05/25 00:44:35;  author: alex;  state: Exp;  lines: +1 -1
+Version hochgezaehlt.
+----------------------------
+revision 1.5
+date: 1999/05/07 22:52:37;  author: alex;  state: Exp;  lines: +1 -1
+RELEASE_VERSION um eins hochgezaehlt
+----------------------------
+revision 1.4
+date: 1999/04/04 12:36:15;  author: alex;  state: Exp;  lines: +7 -2
+5 neue Sprueche reserviert (SP_13 bis SP_17), damit ich spaeter nicht
+schon wieder das Datenfileformat aendern muss.
+----------------------------
+revision 1.3
+date: 1999/04/03 18:23:58;  author: alex;  state: Exp;  lines: +1 -1
+Copyright auf 1999 verlaengert.
+----------------------------
+revision 1.2
+date: 1999/04/03 18:22:34;  author: alex;  state: Exp;  lines: +41 -29
+	* atlantis.h: region struct um z Koordinate erweitert.
+	Diverse Funktionen haben nun z-Koordinate in Parameterliste.
+	(V60): Neu version fuer datenfiles, da ab version 6.0 mit
+	z-Koordinate.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/atlantis.txt,v
+Working file: atlantis.txt
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.2
+date: 1999/06/02 22:41:13;  author: alex;  state: Exp;  lines: +31 -74
+Anpassung der voellig veralterten Dokumentation fuer Spielleiter.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/build.c,v
+Working file: build.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/combat.c,v
+Working file: combat.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/constant.c,v
+Working file: constant.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.3
+	Runde_71: 1.3
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.3
+date: 1999/04/21 20:11:43;  author: alex;  state: Exp;  lines: +3 -2
+Kommentar Änderung.
+----------------------------
+revision 1.2
+date: 1999/04/04 12:39:56;  author: alex;  state: Exp;  lines: +25 -0
+Angepasst auf 5 neue Sprueche:
+
+spellnames[MAXSPELLS]
+spellitem[MAXSPELLS]
+spelllevel[MAXSPELLS]
+iscombatspell[MAXSPELLS]
+spelldata[MAXSPELLS]
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/contact.c,v
+Working file: contact.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/creation.c,v
+Working file: creation.c
+head: 1.6
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.6
+	Runde_71: 1.5
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 7;	selected revisions: 7
+description:
+----------------------------
+revision 1.6
+date: 1999/05/24 21:23:10;  author: alex;  state: Exp;  lines: +12 -11
+Kommetare leicht geaendert
+----------------------------
+revision 1.5
+date: 1999/04/28 20:46:59;  author: alex;  state: Exp;  lines: +15 -8
+(output_map): minx und miny werden fuer jede z Ebene neu bestimmt.
+----------------------------
+revision 1.4
+date: 1999/04/28 20:19:46;  author: alex;  state: Exp;  lines: +1 -1
+* (output_map): Aus "\n\n" ein "\n" gemacht.
+----------------------------
+revision 1.3
+date: 1999/04/03 18:21:42;  author: alex;  state: Exp;  lines: +68 -40
+	* creation.c: Anpassungen an die z-Koordinate in folgenden
+	Funktionen: (output_map), (inputregion), (connecttothis)
+	(connectregions), (seed_monsters), (makeblock).
+----------------------------
+revision 1.2
+date: 1999/04/03 17:31:30;  author: alex;  state: Exp;  lines: +1 -4
+	* creation.c (createcontinent): neu anlegen einer insel zeigt
+	nicht mehr automatisch die gesamte Karte -- dies ist bei sehr
+	grossen Karten besonders laestig.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/economic.c,v
+Working file: economic.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/give.c,v
+Working file: give.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/indicato.c,v
+Working file: indicato.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/indicato.h,v
+Working file: indicato.h
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/Attic/language.c,v
+Working file: language.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_71: 1.2
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.3
+date: 1999/05/24 21:32:01;  author: alex;  state: dead;  lines: +0 -0
+Die beiden Dateien werden von mklang.pl automatisch erzeugt,
+sind im Archiv also nicht noetig.
+----------------------------
+revision 1.2
+date: 1999/04/21 20:12:45;  author: alex;  state: Exp;  lines: +12 -2
+Ein paar leere Texte eingegeben.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/language.def,v
+Working file: language.def
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.4
+	Runde_71: 1.2
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 5;	selected revisions: 5
+description:
+----------------------------
+revision 1.4
+date: 1999/05/20 00:59:46;  author: alex;  state: Exp;  lines: +2 -2
+Provokation der Titanen kann auch auf Ozean gezaubert werden.
+----------------------------
+revision 1.3
+date: 1999/05/07 22:38:40;  author: alex;  state: Exp;  lines: +12 -0
+Texte fuer Ziel-Einheiten (bei Spruechen zum Kartenzeichnen und Teleport)
+----------------------------
+revision 1.2
+date: 1999/04/04 12:41:22;  author: alex;  state: Exp;  lines: +40 -0
+Angepasst auf 5 neue Sprueche: [13], [13_DATA], etc.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/Attic/language.h,v
+Working file: language.h
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_71: 1.2
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.3
+date: 1999/05/24 21:32:02;  author: alex;  state: dead;  lines: +0 -0
+Die beiden Dateien werden von mklang.pl automatisch erzeugt,
+sind im Archiv also nicht noetig.
+----------------------------
+revision 1.2
+date: 1999/04/21 20:13:15;  author: alex;  state: Exp;  lines: +12 -2
+Neue undefinierte Sprueche angelegt.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/laws.c,v
+Working file: laws.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/magic.c,v
+Working file: magic.c
+head: 1.8
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.8
+	Runde_71: 1.3
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 9;	selected revisions: 9
+description:
+----------------------------
+revision 1.8
+date: 1999/05/24 22:41:39;  author: alex;  state: Exp;  lines: +4 -4
+Bug war noch nicht ganz behoben: weiteres fixen an show_map.
+----------------------------
+revision 1.7
+date: 1999/05/24 21:29:06;  author: alex;  state: Exp;  lines: +50 -19
+(show_map) Bug behoben, bei dem das Zeichnen von Karten am Rande der Welt zu
+falschen Aufrufen von makeblock fuehrt.
+----------------------------
+revision 1.6
+date: 1999/05/20 01:00:28;  author: alex;  state: Exp;  lines: +7 -1
+Provokation der Titanen kann auch auf Ozean gezaubert werden.
+----------------------------
+revision 1.5
+date: 1999/05/07 22:37:40;  author: alex;  state: Exp;  lines: +13 -5
+Ein paar Texte zu strings gemacht.
+----------------------------
+revision 1.4
+date: 1999/05/07 22:30:52;  author: alex;  state: Exp;  lines: +15 -4
+Es wird getested, ob Ziel-Einheit auch wirklich auf derselben Ebene
+wie der Magier ist, bevor teleportiert werden kann.
+----------------------------
+revision 1.3
+date: 1999/04/03 18:27:01;  author: alex;  state: Exp;  lines: +1 -1
+Copyright auf 1999 verlaengert.
+----------------------------
+revision 1.2
+date: 1999/04/03 18:23:06;  author: alex;  state: Exp;  lines: +26 -20
+	* magic.c (show_map): z-Koordinate
+	(show_remote_map): z-Koordinate
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/main.c,v
+Working file: main.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/makefile.dep,v
+Working file: makefile.dep
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.2
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.2
+date: 1999/05/07 22:52:02;  author: alex;  state: Exp;  lines: +1 -1
+Neu erzeugt
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/makename.c,v
+Working file: makename.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/mklang.pl,v
+Working file: mklang.pl
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:51;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/monster.c,v
+Working file: monster.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.3
+date: 1999/06/20 23:57:37;  author: alex;  state: Exp;  lines: +17 -17
+spaces guards_message durch \255 ersetzt
+----------------------------
+revision 1.2
+date: 1999/06/20 23:37:31;  author: alex;  state: Exp;  lines: +17 -17
+guards_message: underscores durch spaces ersetzt
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/movement.c,v
+Working file: movement.c
+head: 1.7
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.7
+	Runde_71: 1.4
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 8;	selected revisions: 8
+description:
+----------------------------
+revision 1.7
+date: 1999/05/25 00:00:31;  author: alex;  state: Exp;  lines: +3 -0
+Kommetar erwweitert
+----------------------------
+revision 1.6
+date: 1999/05/24 23:06:26;  author: alex;  state: Exp;  lines: +24 -15
+Aenderungen der Kommetare
+----------------------------
+revision 1.5
+date: 1999/05/20 01:06:21;  author: alex;  state: Exp;  lines: +1 -0
+drowning_men: Der Spieler wird nicht nur gewarnt sondern die Anzahl
+Personen in der Einheit wird neu auch auf 0 gesetzt.
+----------------------------
+revision 1.4
+date: 1999/04/28 20:47:29;  author: alex;  state: Exp;  lines: +22 -1
+(movewhere): Falls eine Einheit am Rand der Welt ausgesetzt wird,
+konnte sie sich ueber den Rand hinaus bewegen. Dies fuehrte zu einem
+Fehler, da r2 nicht gesetzt war.  Nun wird dort eine neue Insel
+gemacht.
+----------------------------
+revision 1.3
+date: 1999/04/03 18:26:39;  author: alex;  state: Exp;  lines: +1 -1
+Copyright auf 1999 verlaengert.
+----------------------------
+revision 1.2
+date: 1999/04/03 18:22:00;  author: alex;  state: Exp;  lines: +2 -2
+	* movement.c (movewhere): z-Koordinate
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/names.c,v
+Working file: names.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/names.inc,v
+Working file: names.inc
+head: 1.7
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.7
+	Runde_71: 1.6
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 8;	selected revisions: 8
+description:
+----------------------------
+revision 1.7
+date: 1999/05/07 23:16:12;  author: alex;  state: Exp;  lines: +59 -0
+Namen bis P aus der Illias eingegeben.
+----------------------------
+revision 1.6
+date: 1999/05/04 22:21:29;  author: alex;  state: Exp;  lines: +44 -0
+1569 Namen, Illias bis L eingegeben.
+----------------------------
+revision 1.5
+date: 1999/04/30 08:27:39;  author: alex;  state: Exp;  lines: +63 -0
+Ilias Namen bis I eingegeben.  1525 Namen!
+----------------------------
+revision 1.4
+date: 1999/04/28 21:13:22;  author: alex;  state: Exp;  lines: +171 -225
+Doppelte Eintraege entfernt welche frueher nicht entdeckt wurden,
+weil die Zeilen nach dem Komma noch white-space enthielten.
+----------------------------
+revision 1.3
+date: 1999/04/28 21:06:49;  author: alex;  state: Exp;  lines: +75 -0
+Orte und Fluesse aus Homers Ilias Register der Namen und griechischen
+Begriffe abgetippt.  Buchstaben A-D.
+----------------------------
+revision 1.2
+date: 1999/04/13 22:30:48;  author: alex;  state: Exp;  lines: +156 -0
+Neue Namen eingefuegt: Kauai, Lanai, Namen von Mike.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/reports.c,v
+Working file: reports.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/save.c,v
+Working file: save.c
+head: 1.7
+branch:
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.6
+	Runde_71: 1.4
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 8;	selected revisions: 8
+description:
+----------------------------
+revision 1.7
+date: 1999/05/26 21:48:00;  author: alex;  state: Exp;  lines: +6 -7
+Kommetare
+----------------------------
+revision 1.6
+date: 1999/05/25 00:02:14;  author: alex;  state: Exp;  lines: +73 -17
+Kommentare geaendert.  Kommt eine Region doppelt vor, wird sie nicht
+angelegt und ihre Burgen, Schiffe und Einheiten werden zur bestehenden
+Region hinzugefuegt.  Dies ist ein fix fuer den Bug bei show_map, der
+einige Regionen doppelt und dreifach hat entstehen lassen.
+----------------------------
+revision 1.5
+date: 1999/05/24 21:30:38;  author: alex;  state: Exp;  lines: +70 -60
+Test auf doppelte Regionen eingebaut -- wird nicht als Fehler behandelt.
+----------------------------
+revision 1.4
+date: 1999/04/04 12:51:30;  author: alex;  state: Exp;  lines: +2 -2
+syntax error fix in readgame
+----------------------------
+revision 1.3
+date: 1999/04/04 12:46:28;  author: alex;  state: Exp;  lines: +6 -2
+	* save.c (readgame): Anpassung an 5 neue Sprueche.
+----------------------------
+revision 1.2
+date: 1999/04/03 18:25:41;  author: alex;  state: Exp;  lines: +10 -4
+Copyright auf 1999 verlaengert.
+
+	* save.c (readgame): lesen von z-Koordinate falls version 6.0.
+	(writegame): schreiben der z-Koordinate.
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/study.c,v
+Working file: study.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/terrain.c,v
+Working file: terrain.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:18:03;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/translate.c,v
+Working file: translate.c
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================
+
+RCS file: /home/cvsroot/atlantis/src/atlantis/translate.h,v
+Working file: translate.h
+head: 1.1
+branch: 1.1.1
+locks: strict
+access list:
+symbolic names:
+	Runde_72: 1.1.1.1
+	Runde_71: 1.1.1.1
+	Runde_66: 1.1.1.1
+	GA: 1.1.1
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 1999/02/02 01:17:52;  author: alex;  state: Exp;  lines: +0 -0
+Importierte Quellen
+=============================================================================

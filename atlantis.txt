@@ -1,0 +1,238 @@
+
+German Atlantis PB(E)M host
+Copyright (C) 1995-1999  Alexander Schroeder
+
+based on:
+
+Atlantis v1.0  13 September 1993
+Copyright 1993 by Russell Wallace
+
+This program may be freely used, modified and distributed.  It may not
+be sold or used commercially without prior written permission from the
+author.
+
+Alexander Schroeder
+Schaerenmoosstrasse 83
+8052 Zuerich
+Schweiz
+
+German Atlantis homepage:	http://home.pages.de/~GA/
+Mail Adresse:			a.schroeder@bsiag.ch
+
+
+ EINFUEHRUNG
+ -----------
+
+Dies ist die Dokumentation zu ATLANTIS.  ATLANTIS ist der Host fuer
+das PB(E)M Spiel German Atlantis.
+
+Die Spieler brauchen weder diese Dokumentation noch das Programm
+ATLANTIS.  Sie bekommen vom Host nur Text files, und der Host
+benoetigt auch nur die Textdateien mit den Befehlen der Spieler.  Die
+Spieler sollten zudem zu Spielbeginn die Dokumentation erhalten.  Bei
+einer Aenderung des Setups sollte das Kapitel "Befehle: Wie man sie
+einschickt, und was man dafuer bekommt" entsprechend geaendert werden.
+Das Programm ACHECK kann als Syntax Checker von den Spielern benutzt
+werden, noetig ist es nicht.
+
+Das Einzige, was man aus dem Source Code herauslesen kann, und das
+nicht in der Dokumentation der Spieler steht, ist die Liste der
+Zaubersprueche und ihre Beschreibungen.  Wie wichtig diese
+Geheimhaltung fuer den Spielspass ist, weiss ich nicht.
+
+Wird ATLANTIS mit Spielern auf dem Netz betrieben, koennen diese sich
+ihre Reports automatisch zusenden lassen (siehe unten).  Besonder in
+diesem Fall ist es unbedingt noetig, dass moeglichst alles
+automatisiert wird.  Ich habe dazu das Program procmail auf meinem
+UNIX account verwendet.  Verschiedene beigefuegte und weiter unten
+dokumentierte Batchfiles auf meinem PC zuhause haben mir auch
+weitergeholfen.
+
+
+ VERWENDUNG
+ ----------
+
+ATLANTIS [-r|-v datei]
+
+   -v datei     
+
+		verarbeitet automatisch die angegebene Befehlsdatei
+		und hosted damit einen ATLANTIS Zug.
+
+   -r           
+
+		schreibt die Reports wieder.  Dies wird nach der
+                Verarbeitung einer Befehlsdatei automatisch gemacht.
+                Die Reports werden in das Unterverzeichnis REPORTS
+                geschrieben.
+
+   -r partei-nr 
+
+		Schreibt nur den Report fuer eine Einheit wieder.
+                Dieser Report wird in das SOURCE Verzeichnis
+                geschrieben.
+
+   -c partei-nr 
+
+		Schreibt nur den Computer Report fuer eine Einheit
+                wieder.  Dieser Report wird in das SOURCE Verzeichnis
+                geschrieben.
+
+   -t runden-nr 
+
+		Liest die angegebene Runde anstatt der letzten Runde im 
+                DATA Unterverzeichnis.
+   
+   -z           
+
+		Schreibt die Zusammenfassung neu.
+
+Beispiel: atlantis -v befehle
+
+Beim ersten Aufstarten wird das Verzeichnis DATA kreiert, in dem die
+Spielstaende als Dateien 0, 1, 2, ... abgespeichert werden,
+entsprechend der aktuellen Runde.  Es wird immer nur der letzte
+Spielstand benoetigt, die anderen Spielstaende koennen geloescht oder
+archiviert (immer eine gute Idee!) werden.  Am Anfang wird der
+Spielstand 0 generiert.
+
+Um Startzuege fuer die ersten Spieler zu generieren, erzeugt man eine
+leere Befehlsdatei, zB. mit "ECHO test > BEFEHLE".  Dann listet man
+alle neuen Spieler in einer Datei, ein Spieler pro Zeile, zB. so:
+
+ Alexander Schroeder, Buelachstrasse 1c, 8057 Zuerich
+ Toni Burger, Hardturmstrasse 7c, 8001 Zuerich
+ internet: joey@aol.com
+
+Diese Datei kann man zB. unter dem Namen NEWBIES abspeichern.  Nun
+startet man ATLANTIS, schaut sich die Karte mit 'K' an und waehlt eine
+Startregion aus, zB. eine Wald- oder Bergregion.  Deren Koordinaten
+merkt man sich.  Die Region (0,0) ist eingeklammert, so dass man die
+gewuenschten Koordinaten durch abzaehlen bekommt.  Angenommen, wir
+waehlen die Region (4,4) aus.  Wir setzen mit 'N' die neuen Spieler
+aus, geben x=4 und y=4 als Koordinaten an und NEWBIES als den Namen
+der Datei mit den Spielern.  Will man nur einen Testspieler einfuegen,
+kann man hier auch einfach Return druecken, dann wird man nur nach der
+Adresse eines Spielers gefragt.
+
+Mit 'A' prueft man, ob die Spieler alle wie erwuenscht abgespeichert
+worden sind.  Dann startet man die erste Runde mit 'V' und der BEFEHLE
+Datei.  Da in der BEFEHLE Datei nichts intelligentes drinnensteht,
+bekommen die neuen Parteien keine Befehle.  Dies wird immer so sein:
+da neue Spieler ihre Partei- und Einheitnummer immer erst mit der
+ersten Auswertung erfahren, koennen sie fuer ihren ersten Zug keine
+Befehle einreichen.  Spaehter hinzukommende Spieler koennen einfach
+vor dem Verarbeiten der naechsten Befehle mit 'N' wie beschrieben
+eingegeben werden.  Die Verarbeitung der ersten Befehle erschafft das
+Verzeichniss REPORTS mit den Auswertungen.  Details folgen sofort:
+
+
+ DATEIEN
+ -------
+
+Im Verzeichnis DATA befindet sich ein Datenfile fuer jeden Zug.  Alle
+ausser dem Letzten koennen geloescht werden.  Es empfiehlt sich
+regelmaessige Backups zu machen.  Zwar sollte ATLANTIS nichts
+zerstoeren, aber ganz gegen Fehler wird niemand gefeit sein.
+
+Im Verzeichnis REPORTS finden sich alle Reports der Spieler.  Normale
+Reports die mit MAILIT verschickt werden, enden auf *.NR, und Computer
+Reports die mit MAILIT verschickt werden, enden auf *.NC.  MAILIT ist
+ein UNIX shell file und verschickt alle Reports fuer Spieler ueber das
+Internet.
+
+MAILIT muss auf der UNIX mit "sh mailit" ausgefuehrt werden.  Da
+MAILIT die beiden (mitgelieferten) shell files WAITHOST und MAILHOST
+gebraucht, kann das Verschicken sehr lange dauern (mehrere Stunden).
+Deswegen empfiehlt sich ein Aufruf mit "nohup sh mailit &", dann
+verschickt das System die Reports weiter, selbst wenn die Verbindung
+zur UNIX abgebrochen wird.  Achtung: MAILHOST muss sicher fuer jeden
+Host neu angepasst werden.  Die entsprechenden Befehle hat der
+Postmaster (einfach mail an "postmaster" schicken) bereit.
+
+Spieler, die ihre Reports auf diese Weise erhalten wollen, muessen
+ihre Adresse in der Form "INTERNET: user@host blabla" setzen.  Will
+man MAILIT aendern, muss man dies im file REPORT.C machen.
+
+Die Dateien ADRESSEN, INFO, KARTE und PARTEIEN werden zur Information
+des Spielleiters geschrieben, sie muessen nicht an die Spieler
+ausgeteilt werden.  KARTE und INFO werden nur auf Verlangen
+geschrieben.  Dafuer gibt es Menuepunkte.  ADRESSEN und PARTEIEN (die
+Zusammenfassung) werden jede Runde beim Verarbeiten der Befehle
+geschrieben.
+
+
+ SOURCE
+ ------
+
+ATLANTIS wurde frueher mit DJGPP (dem GNU C Compiler GCC fuer DOS
+Rechner) kompiliert, und lief auf meinem 486/66 mit 8MB problemlos.
+Noch frueher habe ich aber ATLANTIS auch auf einem 486/33 mit 4MB
+kompiliert und laufen lassen.  Inzwischen kompiliert und laeuft
+Atlantis auf Linux Maschinen.  Das Kompilieren mit DJGPP sollte immer
+noch moeglich sein.  Die Programmierarbeit und das Lernen von C kann
+und will ich allerdings keinem Spielleiter abnehmen -- wer mit
+Atlantis eine eigene Runde startet ist auch voll und ganz dafuer
+verantwortlich: Spieler betreuen, Bugs beheben, etc.
+
+German Atlantis basiert auf dem Original Atlantis 1.0 von Russel
+Wallace.
+
+ACHECK ist der Syntax Checker fuer ATLANTIS Befehlsdateien.  ACHECK.C
+benoetigt einige Informationen vom restlichen ATLANTIS.  Bei
+Aenderungen im Atlantis sollte ACHECK entsprechend nachgefuehrt
+werden!
+
+
+ SPIELLEITER UNTERSTUETZUNG
+ --------------------------
+
+ Karten
+ ------
+
+Vor allem die verschiedenen Karten im Hauptmenu solltem dem
+Spielleiter helfen.  Hier kann er die Dichte der Spieler, gute
+Startpositionen und die Verteilung der Waffen studieren.  Die Karten
+werden automatisch als Datei gespeichert (KARTE), so dass man sich
+grosse Karten separat nochmals anschauen und ausdrucken kann.
+
+Ob die Welt torusfoermig ist (dh. eine quadratische Karte, bei der man
+jeweils am anderen Ende wieder erscheint, wenn man ueber den Rand
+faehrt), oder ob die Welt unendlich gross ist, sowie die Art der
+Inselerzeugung wird in CREATION.C bestimmt.
+
+ Debug Modus
+ -----------
+
+Undokumentierte feature: mit SENDE DEBUG kann eine Partei des
+Spielleiters mehr Informationen ueber die Vorgaenge in den Regionen,
+in denen sich Einheiten der Partei befinden, gewonnen werden.  Dies
+wird nur fuer Programmierer interessant sein, die an den
+entsprechenden Orten im Source Code (meist ECONOMIC.C oder LAWS.C)
+etwas aendern wollen.  Zu jeder Region werden Einzelheiten zur
+Nachfrage, zur Arbeit etc.  angezeigt.
+
+Wenn man eine Datei des Spielstandes im Verdacht hat, korrumpiert zu
+sein, kann man save.c mit #define DEBUG 1 kompilieren, um zu sehen, ob
+man aus der Sache schlau wird.  Dies prueft die Daten unter anderem
+auch auf doppelt vorhandene Nummern, zeigt die meisten Namen am
+Bildschirm etc.  Den stdout kann man sich in eine Datei umleiten
+lassen, um ihn in Ruhe studieren zu koennen.
+
+Generell habe ich Fehler immer nur durch debuggen mit GDB gefunden.
+Ohne einen anstaendigen Debugger wird man also nicht weit kommen.
+
+ Versionen
+ ---------
+
+Wenn die Version geaendert wird, muss dies im MAKEFILE, in ACHECK.C
+und in ATLANTIS.H geschehen.
+
+ Zur Erinnerung
+ --------------
+
+Der Speicher fuer Texte wird im Spiel dynamisch alloziert (Namen,
+Beschreibungen), und kuenstlich auf eine Laenge von 80, bzw. 400
+Zeichen limitiert.  Texte welche im Source stehen sollten nie laenger
+als 1500 Zeichen werden, damit Programmierer von externen
+Applikationen sich danach richten koennen.

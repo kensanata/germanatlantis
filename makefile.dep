@@ -1,0 +1,22 @@
+atlantis.o: atlantis.c atlantis.h indicato.h translate.h language.h
+build.o: build.c atlantis.h indicato.h translate.h language.h
+combat.o: combat.c atlantis.h indicato.h translate.h language.h
+constant.o: constant.c atlantis.h indicato.h translate.h language.h
+contact.o: contact.c atlantis.h indicato.h translate.h language.h
+creation.o: creation.c atlantis.h indicato.h translate.h language.h \
+ names.inc
+economic.o: economic.c atlantis.h indicato.h translate.h language.h
+give.o: give.c atlantis.h indicato.h translate.h language.h
+indicato.o: indicato.c indicato.h
+language.o: language.c language.h
+laws.o: laws.c atlantis.h indicato.h translate.h language.h
+magic.o: magic.c atlantis.h indicato.h translate.h language.h
+main.o: main.c atlantis.h indicato.h translate.h language.h
+makename.o: makename.c
+monster.o: monster.c atlantis.h indicato.h translate.h language.h
+movement.o: movement.c atlantis.h indicato.h translate.h language.h
+reports.o: reports.c atlantis.h indicato.h translate.h language.h
+save.o: save.c atlantis.h indicato.h translate.h language.h
+study.o: study.c atlantis.h indicato.h translate.h language.h
+terrain.o: terrain.c atlantis.h indicato.h translate.h language.h
+translate.o: translate.c translate.h language.h

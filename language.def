@@ -1,0 +1,1233 @@
+# Language Datei fuer German Atlantis Versionen ab 5.1
+
+# Alles wird in einem grossen static Array gespeichert.
+
+# LANGUAGE muss als erstes kommen!
+
+[LANGUAGE]
+Deutsch
+English
+
+# In den folgenden strings koennen auch Platzhalter der Form
+# "%[sd][0-9]" vorkommen.  Die Nummern muessen fortlaufend von 0 aus
+# vergeben werden.  Die Argumente im Funktionsaufruf von translate
+# werden entsprechend geordnet.  Es kann nicht mehr als 10 Argumente
+# (0-9) geben.  siehe auch MAXARGS_TO_TRANSLATE in translate.c.
+
+# Leerstellen, auch am Anfang und am Ende der Zeilen sind
+# *signifikant*!
+
+# Fuer den Titel der Auswertung
+
+[ATLANTIS_REPORT]
+Atlantis Auswertung
+Atlantis Report
+
+[MAIL_REPORT]
+Atlantis im
+Atlantis,
+
+[MAIL_COMPUTER_REPORT]
+Atlantis Computer Report,
+Atlantis computer report,
+
+[MAIL_NEWS]
+Atlantis Zeitung im
+Atlantis news,
+
+[MAIL_COMMENT]
+Atlantis Kommentar im
+Atlantis commentary,
+
+# Report Titel: Datum
+
+[DATE]
+im %s0 des Jahres %d1
+%s0 %d1
+
+[JANUARY]
+Januar
+January
+
+[FEBRUARY]
+Februar
+February
+
+[MARCH]
+Maerz
+March
+
+[APRIL]
+April
+April
+
+[MAY]
+Mai
+May
+
+[JUNE]
+Juni
+June
+
+[JULY]
+Juli
+July
+
+[AUGUST]
+August
+August
+
+[SEPTEMBER]
+September
+September
+
+[OCTOBER]
+Oktober
+October
+
+[NOVEMBER]
+November
+November
+
+[DECEMBER]
+Dezember
+December
+
+[NO_TIME]
+Am Anfang der Zeitrechnung
+at the dawn of time
+
+[ZAT]
+ZAT: %s0
+Orders due %s0
+
+# Report Titel: Ueberschiften
+
+[MISTAKES]
+Fehler
+Mistakes
+
+[WARNINGS]
+Warnungen
+Warnings
+
+[MESSAGES]
+Meldungen
+Messages
+
+[BATTLES]
+Kaempfe
+Battles
+
+[MISCELLANEOUS]
+Verschiedenes
+Miscellaneous
+
+[INCOME]
+Einkommen
+Income
+
+[COMMERCE]
+Handel
+Commerce
+
+[PRODUCTION]
+Produktion
+Production
+
+[MOVEMENTS]
+Bewegungen
+Movements
+
+[STATE_OF_AFFAIRS]
+Aktueller Status
+State of affairs
+
+# Typen von Einheiten
+
+[PERSON]
+Person
+person
+
+[UNDEAD]
+Untoter
+undead
+
+[ILLUSION]
+Illusion
+illusion
+
+[FIREDRAKE]
+Feuerdrache
+firedrake
+
+[DRAGON]
+Drache
+dragon
+
+[WYRM]
+Grosser Wyrm
+great wyrm
+
+[PERSONS]
+Personen
+people
+
+[UNDEADS]
+Untote
+undead
+
+[ILLUSIONS]
+Illusionen
+illusions
+
+[FIREDRAKES]
+Feuerdrachen
+firedrakes
+
+[DRAGONS]
+Drachen
+dragons
+
+[WYRMS]
+Grosse Wyrme
+great wyrms
+
+# Einheiten
+
+[HAS]
+, hat: 
+, has: 
+
+# Monster
+
+[MONSTERS_REFUSE_PEASANTS]
+%s0 wollen keine Bauern in ihrer Einheit
+%s0 refuse to admit peasants
+
+[MONSTERS_DONT_GIVE]
+%s0 geben nichts weg
+%s0 don't give away anything
+
+[MONSTERS_DONT_TAKE]
+%s0 nehmen nichts an
+%s0 don't accept anything
+
+[MONSTERS_DONT_CHANGE_STATUS]
+%s0 koennen ihre Kampfbereitschaft nicht aendern
+%s0 cannot change their combat status 
+
+[MONSTERS_CANT_LAY_SIEGE]
+%s0 koennen eine Burg nicht anstaendig belagern
+%s0 can't lay a proper siege to a castle
+
+# Admin
+
+[NO_MORE_UNITS]
+Ungluecklicherweise wurde Deine Partei ausgeloescht. Warum versuchst Du es nicht nocheinmal?
+Unfortunately your faction has been wiped out. Why don't you try again?
+
+# Steuern, bewachen, unterhalten
+
+[UNIT_UNARMED]
+Einheit ist nicht bewaffnet und kampffaehig
+unit is unarmed
+
+[UNIT_MUST_GUARD]
+Einheit muss zuerst die Region bewachen
+unit is not guarding the region
+
+[NO_PEASANTS]
+Hier gibt es keine Bauern.
+There are no peasants here.
+
+[NO_ENTERTAINERS]
+Keiner hier kann die Bauern unterhalten.
+Nobody here knows how to entertain the peasants.
+
+# Burgen und Schiffe
+
+[SIZE]
+Groesse %d0
+size %d0
+
+[IS_BESIEGED]
+%s0 wird belagert
+%s0 is under siege
+
+[IS_BURNED_DOWN]
+%s0 brennt %s1 nieder.
+%s0 burns %s1 down.
+
+[IS_SUNK]
+%s0 versenkt %s1.
+%s0 sinks %s1.
+
+[IS_BESIEGED_BY]
+%s0 belagert %s1.
+%s0 lays siege to %s1.
+
+[IS_BESIEGED_WITH_CATAPULTS_BY]
+%s0 belagert %s1; die Katapulte zerstoerten %d2% der Befestigungen.
+%s0 lays siege to %s1; the catapults destroy %d2% of the building.
+
+[BESIEGED]
+, belagert
+, besieged
+
+[CAPACITY]
+Kapazitaet: %d0/%d1 frei
+capacity: %d0/%d1 free
+
+[INCOMPLETE]
+im Bau (%d0%)
+incomplete (%d0%)
+
+[DAMAGED]
+beschaedigt (%d0%)
+damaged (%d0%)
+
+[BUILDING_NOT_FOUND]
+Die Burg wurde nicht gefunden
+building not found
+
+[NOBODY_CAN_BUILD]
+Keiner hier kann Burgen bauen
+this unit cannot build
+
+[BUILDING_REQUIRES_STONES]
+Zum Burgenbau braucht man Steinquader
+building requires stones
+
+[CONTINUING_NEEDS_MORE_TALENT]
+Um an %s0 weiterzubauen, braucht man ein Talent von mindestens %d1
+a talent of at least %d1 is required to continue building %s0
+
+[TALENT_IS_INSUFFICIENT]
+Mit dem jetztigen Talent kann man an %s0 nicht weiter bauen
+the current talent is insufficient to continue building %s0
+
+[STARTS_TO_BUILD]
+%s0 beginnt %s1 fuer %d2 zu erbauen.
+%s0 starts to build %s1 using %d2 stones.
+
+[CONTINUES_TO_BUILD]
+%s0 baut fuer %d2 an %s1 weiter.
+%s0 continues to build %s1 using %d2 stones.
+
+[CANNOT_DESTROY]
+Uns gehoert nichts, was man abreissen oder versenken koennte
+We own nothing we could tear down or sink
+
+[SHIP_NOT_ON_SHORE]
+Das Schiff ist auf hoher See
+The ship is at sea
+
+# Terrains
+
+[OCEAN]
+Ozean
+ocean
+
+[PLAIN]
+Ebene
+plain
+
+[FOREST]
+Wald
+forest
+
+[SWAMP]
+Sumpf
+swamp
+
+[DESERT]
+Wueste
+desert
+
+[HIGHLAND]
+Hochland
+highland
+
+[MOUNTAIN]
+Berge
+mountains
+
+[GLACIER]
+Gletscher
+Glacier
+
+# Baeume sind keine items, deswegen muessen sie in Einzahl und Mehrzahl aufgefuehrt werden.
+
+[TREE]
+%d0 Baum
+%d0 tree
+
+[TREES]
+%d0 Baeume
+%d0 trees
+
+# Bauern sind keine items, deswegen muessen sie in Einzahl und Mehrzahl aufgefuehrt werden.
+
+[PEASANT]
+%d0 Bauer
+%d0 peasant
+
+[PEASANTS]
+%d0 Bauern
+%d0 peasants
+
+# Gegenstaende, singular
+
+[IRON]
+Eisenbarren
+iron
+
+[WOOD]
+Holzstamm
+wood
+
+[STONE]
+Steinquader
+stone
+
+[HORSE]
+Pferd
+horse
+
+[WAGON]
+Wagen
+wagon
+
+[CATAPULT]
+Katapult
+catapult
+
+[SWORD]
+Schwert
+sword
+
+[SPEAR]
+Speer
+spear
+
+[CROSSBOW]
+Armbrust
+crossbow
+
+[LONGBOW]
+Bogen
+longbow
+
+[CHAIN_MAIL]
+Kettenhemd
+chain mail
+
+[PLATE_ARMOR]
+Plattenpanzer
+plate armor
+
+[BALM]
+Balsamtopf
+balm
+
+[SPICE]
+Gewuerzballen
+spice
+
+[JEWELRY]
+Juwel
+jewelry
+
+[MYRRH]
+Myrrhe Saeckchen
+myrrh
+
+[OIL]
+Oel Amphore
+oil
+
+[SILK]
+Seidenballen
+silk
+
+[INCENSE]
+Weihrauch Kiste
+incense
+
+[I1]
+undefiniert
+undefined
+
+[I2]
+undefiniert
+undefined
+
+[AMULET_OF_HEALING]
+Amulett der Heilung
+amulet of healing
+
+[AMULET_OF_TRUE_SEEING]
+Amulett des wahren Sehens
+amulet of true seeing
+
+[CLOAK_OF_INVULNERABILITY]
+Mantel der Unverletzlichkeit
+cloak of invulnerability
+
+[RING_OF_INVISIBILITY]
+Ring der Unsichtbarkeit
+ring of invisibility
+
+[RING_OF_POWER]
+Ring der Macht
+ring of power
+
+[RUNESWORD]
+Runenschwert
+runesword
+
+[SHIELDSTONE]
+Schildstein
+shieldstone
+
+[WINGED_HELMET]
+Helm der Sieben Winde
+winged helmet
+
+[DRAGON_PLATE]
+Drachenpanzer
+dragon plate
+
+[I4]
+undefiniert
+undefined
+
+# Gegenstaende, plural
+
+[IRONS]
+Eisenbarren
+irons
+
+[WOODS]
+Holzstaemme
+woods
+
+[STONES]
+Steinquader
+stones
+
+[HORSES]
+Pferde
+horses
+
+[WAGONS]
+Wagen
+wagons
+
+[CATAPULTS]
+Katapulte
+catapults
+
+[SWORDS]
+Schwerter
+swords
+
+[SPEARS]
+Speere
+spears
+
+[CROSSBOWS]
+Armbrueste
+crossbows
+
+[LONGBOWS]
+Boegen
+longbows
+
+[CHAIN_MAILS]
+Kettenhemden
+chain mails
+
+[PLATE_ARMORS]
+Plattenpanzer
+plate armors
+
+[BALMS]
+Balsamtoepfe
+balms
+
+[SPICES]
+Gewuerzballen
+spices
+
+[JEWELRIES]
+Juwelen
+jewelries
+
+[MYRRHS]
+Myrrhe Saeckchen
+myrrh
+
+[OILS]
+Oel Amphoren
+oils
+
+[SILKS]
+Seidenballen
+silk
+
+[INCENSES]
+Weihrauch Kisten
+incense
+
+[I1S]
+undefiniert
+undefined
+
+[I2S]
+undefiniert
+undefined
+
+[AMULETS_OF_HEALING]
+Amulette der Heilung
+amulets of healing
+
+[AMULETS_OF_TRUE_SEEING]
+Amulette des wahren Sehens
+amulets of true seeing
+
+[CLOAKS_OF_INVULNERABILITY]
+Maentel der Unverletzlichkeit
+cloaks of invulnerability
+
+[RINGS_OF_INVISIBILITY]
+Ringe der Unsichtbarkeit
+rings of invisibility
+
+[RINGS_OF_POWER]
+Ringe der Macht
+rings of power
+
+[RUNESWORDS]
+Runenschwerter
+runeswords
+
+[SHIELDSTONES]
+Schildsteine
+shieldstones
+
+[WINGED_HELMETS]
+Helme der Sieben Winde
+winged helmets
+
+[DRAGON_PLATES]
+Drachenpanzer
+dragon plates
+
+[I4S]
+undefiniert
+undefined
+
+# Zaubersprueche.  Die Zaubersprueche sind die laengsten Strings.  Sie duerfen nicht laenger als 1500 Zeichen
+# sein; dies wurde dem Programmierer von ACSAS versprochen.
+
+[BLACK_WIND]
+Schwarzer Wind
+Black Wind
+
+[BLACK_WIND_DATA]
+Dieser Zauber ruft einen schwarzen Wirbelsturm des Todes, der alles Leben zerstoert, und das Schlachtfeld mit gefrorenen Leichen uebersaeht zuruecklaesst. Die Gesichter der Opfer sind vor Angst verzerrt und die Augen gebrochen vom Anblick der daemonischen Schrecken im Schatten des schwarzen Sturmes. Im Kampf gezaubert, toetet dieser Spruch jede Kampfrunde zwischen 2 und 1250 Feinde.
+This spell creates a black whirlwind of energy which destroys all life, leaving frozen corpses with faces twisted into expressions of horror. Cast in battle, it kills from 2 to 1250 enemies.
+
+[CAUSE_FEAR]
+Panik
+Cause Fear
+
+[CAUSE_FEAR_DATA]
+Dieser Zauber erzeugt eine Aura der Angst und des Grauens, so dass die feindlichen Truppen in Panik ausbrechen. Zwischen 2 und 100 Feinde werden jeder Kampfrunde demoralisiert und kaempfen mit einem -1 Malus auf ihr Kampftalent. Die Kaempfenden bleiben bis zum Ende des Kampfes demoralisiert. Dieser Kampfzauber kann mit einem Magischen Leuchtfeuer kombiniert werden.
+This spell creates an aura of fear which causes enemy troops in battle to panic. Each time it is cast, it demoralizes between 2 and 100 troops for the duration of the battle. Demoralized troops fight with a -1 penalty to their fighting skill. The troops remain demoralized until the end of the fight. This spell can be used together with the Dazzling Light spell.
+
+[RUST]
+Rosthauch
+Breath of Rust
+
+[RUST_DATA]
+Der Rosthauch wird durch das Zermahlen eines kleinen Rubins von $50 Wert und ein naechtliches Ritual der Bitte gerufen. Das Ritual der Bitte besteht aus einer langen Litanei von Bitten und Anrufungen an einem kleinen Feuer, durch die ein Erdelement dazu bewegt wird, seinen ueblen Atem auszusenden, und alles Erz rosten zu lassen. Der Hauch des Rostes ist nicht stark genug, um Ruestungen rosten zu lassen, doch werden zwischen 2 und 50 Schwertern so unbrauchbar schartig und rostig, dass man sie wegwerfen muss. Beim Zaubern gibt man alle Nummern der Einheiten an, deren Schwerter befallen werden sollen: 'ZAUBER ROSTHAUCH einheit-nr einheit-nr ...' Solange der Rosthauch Macht hat, wird er von Einheit zu Einheit schweben und ihre Schwerter verrosten lassen. Niemand wird erkennen koennen, welche Einheit das Erdelement gerufen hat.
+This spell will call forth an earth element. The ritual involves a night of praying the litany of beggin at a fire and the crushing of a ruby worth $50. The earth element will exhale and its breath will rust 2 to 50 enemy swords. The swords become unusable. All the units to be affected have to be listed in the command: 'CAST \"Breath of Rust\" unit-nr unit-nr ...' The breath of rust will travel from one listed unit to the next until its power has been used up. The unit casting this spell will remain undetected.
+
+[DAZZLING_LIGHT]
+Magische Leuchtfeuer
+Dazzling Light
+
+[DAZZLING_LIGHT_DATA]
+Dieser Zauberspruch ruft auf dem Schlachtfeld Lichtblitze und Leuchtfeuer hervor, welche jeder Runde zwischen 2 und 50 Feinde verwirren. Die geblendeten Truppen leiden bei ihrer naechsten Attacke an einem Malus von -1 auf ihr Kampftalent. Die Feinde bleiben bis zum Ende des Kampfes geblendet! Dieser Spruch kann mit dem Panik Kampfzauber kombiniert werden.
+This spell, cast in battle, creates a flash of light which dazzles from 2 to 50 enemy troops each round. Dazzled troops are at a -1 to their fighting skill for the rest of the fight. This spell can be used together with the Panic combat spell.
+
+[FIREBALL]
+Feuerball
+Fireball
+
+[FIREBALL_DATA]
+Dieser Spruch ermoeglicht es dem Magier, jede Kampfrunde einen Feuerball zu verschleudern. Jeder Feuerball wird zwischen 2 und 50 Feinde verkohlen.
+This spell enables the caster to hurl balls of fire. Each time it is cast in battle, it will incinerate between 2 and 50 enemy troops.
+
+[HAND_OF_DEATH]
+Hand des Todes
+Hand of Death
+
+[HAND_OF_DEATH_DATA]
+Die Macht dieses Spruches zerreisst die Eingeweide eines jeden Lebewesens auf dem Schlachtfeld. Zwischen 2 und 250 Feinde werden pro Kampfrunde von dieser Todeswelle auf dem Schlachtfeld erfasst, und sterben einen grausamen Tod.
+This spell disrupts the metabolism of living organisms, sending an invisible wave of death across a battlefield. It will kill between 2 and 250 enemy troops each round.
+
+[HEAL]
+Heilung
+Heal
+
+[HEAL_DATA]
+Nach dem Kampf kann der Magiekundige mit diesem Zauber versuchen, die Verletzten und Sterbenden zu heilen. Dies geschieht automatisch. Durch die Gnade der Goetter werden zwischen 2 und 50 eigene Soldaten weiterleben koennen, die sonst noch auf dem Schlachtfeld verendet waeren. Diesen Spruch muss man nicht setzen oder zaubern - er wirkt automatisch. Dieser Spruch laesst sich nicht mit einem Amulett der Heilung kombinieren. Stirbt der Magiekundige im Kampf, kann der Zauber nicht mehr gesprochen werden.
+This spell enables the caster to attempt to heal the injured after a battle. It is used automatically, and does not require use of either the COMBAT or CAST command. If one's side wins a battle, a number of casualties on one's side, between 2 and 50, will be healed.
+
+[INSPIRE_COURAGE]
+Heldenmut
+Inspire Courage
+
+[INSPIRE_COURAGE_DATA]
+Der Kampfesmut der eigenen Truppen wird durch diesen Zauber gehoben. Dadurch wird die Auswirkung des Panik-Kampfzaubers pro Kampfrunde fuer 2 bis 100 betroffene Soldaten aufgehoben.
+This spell boosts the morale of one's troops in battle. It cancels the effect of the Cause Fear spell on a number of one's own troops ranging from 2 to 100 each round.
+
+[LIGHTNING_BOLT]
+Blitzschlag
+Lightning Bolt
+
+[LIGHTNING_BOLT_DATA]
+Im Kampf kann der Magier mit diesem Zauber Blitze verschleudern. Jeder Blitz wird zwischen 2 und 10 Feinde pro Kampfrunde toeten.
+This spell enables the caster to throw bolts of lightning to strike down enemies in battle. It kills from 2 to 10 enemies each round.
+
+[GOLEM_SERVICE]
+Dienst der Golems
+Golem Service
+
+[GOLEM_SERVICE_DATA]
+Fuer dieses Ritual benoetigt man eine Goldklumpen im Wert von $50. Man setzt sich bei moeglichst klarem Wetter auf einen Stein und beginnt einen tiefen Brummelgesang. Nach einer Stunde tauchen zwei Golems auf - steinerne, menschenartige Wesen von etwa 12 Fuss Hoehe. Diese Golems tragen auf ihrem Ruecken je einen grossen, schweren Steinquader. Diese erhaelt der Magier. Wenn der Magier gut genug getarnt ist, werden die anderen Parteien nicht erfahren, wer die Steinquader bekommen hat.
+This ritual requires a gold nugget worth $50. The magician, sitting on a large block of stone, starts to sing a low, rumbling melody. After about an hour two stone golems will appear, each carrying 2 stone blocks. The mage will receive those stone blocks. If the mage is stealthy enough, the other factions will not know who has received the stone blocks.
+
+[CLAWS_OF_THE_DEEP]
+Klauen der Tiefe
+Claws of the Deep
+
+[CLAWS_OF_THE_DEEP_DATA]
+Fuer diesen Zauber benoetigt man 10 grosse, eiserne Naegel (Kostenpunkt ca. $50). An einem heissen Tag stimmt man an einen wilden, schrillen Gesang an und beginnt einen chaotischen Tanz. Nach einer Weile beginnt man, auf den Boden zu spucken, wilde Flueche an die Geister der Erde zu richten und den Boden nieder zu treten. Nach einiger Zeit faengt man zudem an, die eisernen Naegel in den Erdboden zu treiben. Hat man alles richtig gemacht, werden die Erdgeister nach einer Stunde zornig genug sein, um in die Falle zu tapsen: Die Naegel fangen an zu wachsen, werden zu grauenhaften Krallen, welche versuchen den Magier in die Tiefe zu reissen. Sobald diese dem Magier aber gefaehrlich werden, beendet er seinen Gesang, und die Krallen erstarren. Diese kann man problemlos zu 2-10 Eisenbarren einschmelzen, welche der Magier erhaelt. Wenn der Magier gut genug getarnt ist, werden die anderen Parteien nicht erfahren, wer die Eisenbarren bekommen hat.
+This spell requires 10 huge iron nails costing about $50. The mage must start singing on a hot day and dance the dance of the cursing of the earth. While dancing, the mage must ram the nails deeper into the ground. After an hour the spirits of the deep will be angry. The nails will grow and turn into huge claws trying to grab the mage and tear him to shreds. The mage, however, ends his cursing and escapes. The claws will remain and can be molten into 2 to 10 iron bars. If the mage is stealthy enough, no faction will notice who has received those iron bars.
+
+[MAKE_AMULET_OF_HEALING]
+Erschaffe ein Amulett der Heilung
+Make Amulet of Healing
+
+[MAKE_AMULET_OF_HEALING_DATA]
+Ein Amulett der Heilung kann durch diesen Spruch erschaffen werden. Es erlaubt dem Traeger nach einer Schlacht, zwischen 2 und 50 Soldaten vom sicheren Tod zu retten. Das Amulett ist wirkungslos, wenn der Traeger im Kampf gefallen ist. Das Amulett ist nutzlos, wenn der Traeger den Heilungszauber beherrscht. Die Reagenzien fuer das Amulett kosten $600. Das Amulett hat kein nennenswertes Gewicht.
+This spell allows one to create an Amulet of Healing. This amulet allows its possessor to attempt to heal the injured after a battle. It is used automatically, and does not require the use of either the COMBAT or CAST command. This amulet is useless if the possessor knows the Healing spell. If the user's side wins a battle, a number of casualties on that side, between 2 and 50, will be healed. The amulet costs $600 to make. It has no weight.
+
+[MAKE_AMULET_OF_TRUE_SEEING]
+Erschaffe ein Amulett des Wahren Sehens
+Make Amulet of True Seeing
+
+[MAKE_AMULET_OF_TRUE_SEEING_DATA]
+Der Spruch ermoeglicht es einem Magier, ein Amulett des Wahren Sehens zu erschaffen. Das Amulett erlaubt es dem Traeger, alle Einheiten, die durch einen Ring der Unsichtbarkeit geschuetzt sind, zu sehen. Einheiten allerdings, die sich mit ihrem Tarnungs-Talent verstecken, bleiben weiterhin unentdeckt. Die Herstellung des Amulettes kostet $600. Das Amulett hat kein nennenswertes Gewicht.
+This spell allows one to create an Amulet of True Seeing. This allows its possessor to see units which are hidden by Rings of Invisibility. (It has no effect against units which are hidden by the Stealth skill.) The amulet costs $600 to make. It has no weight.
+
+[MAKE_CLOAK_OF_INVULNERABILITY]
+Erschaffe einen Mantel der Unverletzlichkeit
+Make Cloak Of Invulnerability
+
+[MAKE_CLOAK_OF_INVULNERABILITY_DATA]
+Dieser Spruch erschafft einen Mantel der Unverletzlichkeit. Der Mantel schuetzt den Traeger vor Verletzungen im Kampf. Jede Attacke mit normalen Waffen, die den Traeger treffen, werden mit 99.99% Wahrscheinlichkeit abgelenkt. Die Schutzwirkung wird durch eine Ruestung nicht weiter erhoeht. Gegen magische Angriffe nuetzt der Mantel nichts. Seine Herstellung kostet $600. Der Mantel hat kein nennenswertes Gewicht.
+This spell allows one to create a Cloak of Invulnerability. This cloak protects its wearer from injury in battle; any attack with a normal weapon which hits the wearer has a 99.99% chance of being deflected. This benefit is gained instead of, rather than as well as, the protection of any armor worn; and the cloak confers no protection against magical attacks. The cloak costs $600 to make. It has no weight.
+
+[MAKE_RING_OF_INVISIBILITY]
+Erschaffe einen Ring der Unsichtbarkeit
+Make Ring Of Invisibility
+
+[MAKE_RING_OF_INVISIBILITY_DATA]
+Mit diesem Spruch kann der Zauberer einen Ring der Unsichtbarkeit erschaffen. Der Traeger des Ringes wird fuer alle Einheiten anderer Parteien unsichtbar, egal wie gut ihre Wahrnehmung auch sein mag. In einer unsichtbaren Einheit muss jede Person einen Ring tragen. Der Ring und das Herstellungsritual kosten zusammen $600. Der Ring hat kein nennenswertes Gewicht.
+This spell allows one to create a Ring of Invisibility. This ring renders its wearer invisible to all units not in the same faction, regardless of Observation skill. For a unit of many people to remain invisible, it must possess a Ring of Invisibility for each person. The ring costs $600 to make. It has no weight.
+
+[MAKE_RING_OF_POWER]
+Erschaffe einen Ring der Macht
+Make Ring Of Power
+
+[MAKE_RING_OF_POWER_DATA]
+Dieses maechtige Ritual erschafft einen Ring der Macht. Ein Ring der Macht verdoppelt den Effekt eines jeden Spruches, den der Traeger im Kampf zaubert. Auch die Wirkungen von magischen Gegenstaenden wird im Kampf verdoppelt. Die Materialien und die Einrichtungen fuer die Herstellung des Ringes der Macht kosten $800. Der Ring hat kein nennenswertes Gewicht.
+This spell allows one to create a Ring of Power. This ring doubles the effectiveness of any spell the wearer casts in combat, or any magic item the wearer uses in combat. The ring costs $800 to make. It has no weight.
+
+[MAKE_RUNESWORD]
+Erschaffe ein Runenschwert
+Make Runesword
+
+[MAKE_RUNESWORD_DATA]
+Mit diesem Spruch erzeugt man ein Runenschwert. Die Klinge des schwarzen Schwertes ist mit alten, magischen Runen verziert, und ein seltsames Eigenleben erfuellt die warme Klinge. Um es zu benutzen, muss man des Schwertkampfes kundig sein. Der Traeger des Runenschwertes erhaelt einen Talentbonus von +2 im Kampf. Die Runenschwerter im Kampf 50% aller Panik-Kampfzauber feindlicher Zauberer negieren. Mehr als 1 Runenschwert sind hierfuer nicht noetig. Zudem schneidet ein Runenschwert durch den Mantel der Unverletzlichkeit wie durch Butter. Das Schwert uns seine Herstellung kosten $600. Es hat kein nennenswertes Gewicht.
+This spell allows one to create a Runesword. This is a black sword with magical runes etched along the blade. To use it, one must have both the Sword skills at 1 or higher. It confers a bonus of 2 to the user's Sword skill in battle, and also projects an aura of power that has a 50% chance of cancelling any Fear spells cast by an enemy magician. A Cloak of Invulnerability confers no protection against it. The sword costs $600 to make. It has no weight.
+
+[MAKE_SHIELDSTONE]
+Erschaffe einen Schildstein
+Make Shieldstone
+
+[MAKE_SHIELDSTONE_DATA]
+Dieser Spruch erlaubt es dem Magiekundigen, einen Schildstein zu erschaffen. Dieser kleine, schwarze Stein wehrt feindliche Magie im Kampf ab. Er wirkt automatisch. Jede Runde webt der Schildstein eine weitere Schicht des Magieschutzes um die Kaempfenden auf der Seite des Traegers. Wenn ein feindlicher Magier einen Spruch zaubert, wird er zu 50% negiert, falls mindestens eine Schutzschicht die eigenen Leute schuetzt. Dringt der feindliche Zauber allerdings durch das Schutzschild, wirkt er in voller Macht und eine Schicht des Schildes loest sich auf. Die Herstellung des Schildsteines kostet $800. Der Stein hat kein nennenswertes Gewicht.
+This spell allows one to create a Shieldstone. This is a small black stone, engraved with magical runes, that creates an invisible shield of energy that deflects hostile magic in battle. The stone is used automatically, and does not require the use of either the COMBAT or CAST commands. Each round of combat, it adds one layer to the shielding around one's own side. When a hostile magician casts a spell, provided there is at least one layer of shielding present, there is a 50% chance of the spell being deflected. If the spell is deflected, nothing happens. If it is not, then it has full effect, and one layer of shielding is removed. The stone costs $800 to make. It has no weight.
+
+[REMOTE_MAP]
+Geisterauge
+Remote Map
+
+[REMOTE_MAP_DATA]
+Mit dem Geisteraugenzauber kann der Magier seinen Geist in die Ferne schicken, und das dortige Gebiet aus grosser Hoehe betrachten. Daraufhin kann er ohne weiteres eine Karte der gesehenen Regionen zeichnen. Die benoetigten Regenbogenpilze kosten $50. Die Entfernung darf nicht weiter als 40 Regionen sein. Sie berechnet sich aus der Summe der Differenzen der Koordinaten in x und y Richtung. Den Spruch verwendet man in der Form 'ZAUBER GEISTERAUGE x y', wobei x und y die Koordinaten der Ziel-Region sind.
+This spell provides the magic user with an overview over foreign lands; this enables the magic user to draw a map of the foreign area. The rainbow mushrooms required cost $50. To use it, the magic user must provide the coordinates of the central region of the area to survey: 'CAST \"remote map\" x y'. The distance to this region must be 40 regions or less. The distance is computed by summing the differences between the x and the y coordinates.
+
+[PLAGUE]
+Pesthauch
+Plague
+
+[PLAGUE_DATA]
+Nach einem dreitaegigen Ritual in tiefer Dunkelheit unter der Erde kann der Magier Ratten zu sich rufen. Die speziellen Wuermer, welche man hierfuer benoetigt, kosten jeweils $50. Die gerufenen Ratten werden mit Haut und Haaren verschlungen. Nach einer weiteren Nacht leuchten die Augen des Magiers in funkelndem Rot, seine Stimme ist nur noch ein boeses Fluestern eines uebel riechenden Windes. Und im Laufe der naechsten Tage bricht die Pest aus... Niemand wird erkennen koennen, wer der Region die Pest gebracht hat. Der Pest fallen etwa 40% der Bauern zum Opfer.
+This spell calls forth rats and other vermin. The worms needed for this cost $50. Several of these rats have to be swallowed by the magic user. For the next three days, the magician's eyes will glow red and his breath will smell like a cursed graveyard. Within days, the plague will decimate the region's peasant population by about 40%. Nobody will know who caused the plague.
+
+[DREAM_MAP]
+Traumadler
+Dream Land
+
+[DREAM_MAP_DATA]
+Der Magier kann seinen Geist mit diesem Zauber als Traumadler in die Traeume von ihm freundlich gesinnten Einheiten schicken. Dort kann er sich aus grosser Hoehe einen Ueberblick ueber die umliegenden Regionen verschaffen. Am naechsten Morgen kann der Magier eine Karte der Umgebung zeichnen. Fuer diesen Spruch braucht man Teufelskraut, Eulenblut und ein Auge eines Rindes im Wert von $50. Man verwendet den Zauber in der Form 'ZAUBER TRAUMADLER einheit-nr'. Wenn die Ziel-Einheit nicht zur eigenen oder einer alliierten Partei gehoert, muss sie in diesem Monat mit dem Magier Kontakt aufgenommen haben.
+This spell enables the magician to enter the dream lands and find a friendly unit there. As the magicians' eyes sweep across the land, a map can be drawn from the regions surrounding the friendly unit's position. The weed required for this spell costs $50. To cast the spell, give the unit's number: 'CAST \"dream land\" unit-nr'. If the unit does not belong to the same or to an allied faction, it must have contacted the magician.
+
+[SHIELD]
+Schild
+Shield
+
+[SHIELD_DATA]
+Durch diesen Spruch wird jede Kampfrunde eine weitere Schicht des Magieschildes um die Kaempfenden auf der Seite des Traegers gewoben. Wenn ein feindlicher Magier einen Spruch zaubert, wird er zu 50% negiert, falls mindestens eine Schutzschicht die eigenen Leute schuetzt. Dringt der feindliche Zauber allerdings durch das Schutzschild, wirkt er in voller Macht und eine Schicht des Schildes loest sich auf.
+This spell creates an invisible shield of energy that deflects hostile magic. Each round that it is cast in battle, it adds one layer to the shielding around one's own side. When a hostile magician casts a spell, provided there is at least one layer of shielding present, there is a 50% chance of the spell being deflected. If the spell is deflected, nothing happens. If it is not, then it has full effect, and one layer of shielding is removed.
+
+[SUNFIRE]
+Sonnenfeuer
+Sunfire
+
+[SUNFIRE_DATA]
+Mit diesem Zauber ruft der Magier die Feuer der Sonne auf die Erde herab. Das gleissende Feuer wird ganze Armeen vergluehen lassen. In jeder Kampfrunderunde verbrennt das Sonnenfeuer zwischen 2 und 6250 Feinde.
+This spell allows the caster to incinerate whole armies with fire brighter than the sun. Each round it is cast, it kills from 2 to 6250 enemies.
+
+[TELEPORT]
+Teleportation
+Teleport
+
+[TELEPORT_DATA]
+Dieser Zauber erlaubt es jedem Magier, ganze Einheiten zu einer Ziel-Einheit zu teleportieren. Dazu gibt man dem Magier den Befehl ZAUBER TELEPORTATION Ziel-Einheit Einheit [Einheit ...]. Die Einheiten nach der Ziel-Einheit werden alle teleportiert. Der Magier kann sich selber natuerlich auch teleportieren. Teleportierte Einheiten sowie die Ziel-Einheit muessen zur Partei des Magiers oder einer alliierten Partei gehoeren, oder in diesem Monat mit dem Magier Kontakt aufgenommen haben. Das Gesamtgewicht aller Einheiten - Leute, Pferde und Ausruestung - darf (1000/Distanz) nicht ueberschreiten. Bei einer Teleportation ueber 10 Regionen hinweg darf also das Gewicht nicht groesser als 100 werden. Die Distanz ist die Anzahl Schritte, welche eine Einheit wandern muesste, um die gleiche Entfernung zurueck zu legen. Die Feuersalamander und Froschbeine fuer diesen Spruch kosten $50. Die anderen Parteien koennen nicht feststellen, wohin die teleportierten Einheiten verschwunden oder woher sie gekommen sind. Teleportierte Einheiten koennen in dieser Runde keine NACH oder FOLGE Befehle ausfuehren, und teleportierte Magier koennen am Ziel-Ort nicht einen weiteren ZAUBER TELEPORTATION Befehl ausfuehren.
+This spell allows the caster to move himself and others across vast distances without traversing the intervening space. The command to use it is CAST TELEPORT target-unit unit-no [unit-nr ...]. The target unit is a unit in the region to which the teleport is to occur. If the target unit is not in your faction, it must be in a faction which has contacted for you that month. After the target unit comes a list of one or more units to be teleported into the target unit's region (this may optionally include the caster). Any units to be teleported, not in your faction, must have contacted you that month. The total weight of all units to be teleported (including people, equipment and horses) must not exceed (10000/distance). The distance is computed by summing the differences between the x and the y coordinates. If the target unit is in a building or on a ship, the teleported units will emerge there, regardless of who owns the building or ship. The caster spends the month preparing the spell and the teleport occurs at the end of the month, so any other units to be transported can spend the month doing something else. Teleported units may not issue the MOVE command, and they may not cast a Teleport themselves. The spell costs $50 to cast. Other factions will not know whereto units have disappeared or wherefrom they have come.
+
+[MAP]
+Adlerauge
+Eagle Eye
+
+[MAP_DATA]
+Dieser Zauberspruch erlaubt es dem Magier, sich im Geiste in einen Adler zu versetzen, und aus grosser Hoehe auf die Gegend hinab zu blicken. Aus der Hoehe verschwinden alle Einzelheiten und das ganze Panorama breitet sich unter dem Magier in seiner ganzen Pracht aus. Der Magier kann dann problemlos eine wunderbare Karte der Umgebung zeichnen. Die Adlerfedern, die Schlangenaugen und die Eulenblut Tinktur kosten $50.
+The Spell enables the mage to draw a map of the surrounding area. The necessary ingredients cost $50.
+
+[INFERNO]
+Inferno
+Inferno
+
+[INFERNO_DATA]
+Dieses Ritual laesst die gluehenden Eingeweide der Erde aufbrechen. Der Boden zerreisst und die sich erbrechende Lava begraebt das Land unter sich. Nur ein Zehntel der Bevoelkerung einer Region wird diese Katastrophe ueberleben. Die einzige Zutat, die man fuer dieses Hoellenfeuer braucht, ist der alte Schaedel eines Kindes, den man fuer $50 erstehen kann.
+This spell calls shatters the earth's crust and throws the region into a flaming inferno. About a tenth of the population will survive the catastropy. The only ingredient needed is the skull of a child, costing about $50.
+
+[HOLY_WOOD]
+Hain der 1000 jaehrigen Eichen
+Holy Wood
+
+[HOLY_WOOD_DATA]
+Einen heiligen Hain der 1000 jaehrigen Eichen laesst man wachsen, indem man geweihte Eicheln pflanzt und einen Regen der Fruchtbarkeit beschwoert. Wird dieser Zauber gemaess der Anleitung ausgefuehrt, werden zwischen 2 und 50 erhabene Eichen waehrend des naechtlichen Sturmes aus dem Boden schiessen und in wenigen Stunden ihre volle Hoehe von fast 40m erreicht haben. Das verwendete Silberextrakt verbraucht $50. Die anderen Parteien werden den Magier identifizieren, wenn er sich nicht gut genug tarnen kann.
+This spells grows a grove of old oaks in the region. These trees, between 2 and 50, grow within hours. The only ingredient used is some holy water worth $50. If the mage is stealthy enough, no faction will notice who has grown the trees.
+
+[TREMMOR]
+Donnerbeben
+Tremmor
+
+[TREMMOR_DATA]
+Wird dieser Spruch gezaubert, so zerreisst ein scharfer Knall die Luft, und wenige Sekunden spaeter baeumt sich der Boden auf. Ein lautes Grollen und Aechzen ertoent aus der Unterwelt. Risse breiten sich in Windeseile aus, und die Mauern der Burg oder Befestigung, die auf diesem Boden gebaut wurde, beginnt Risse zu zeigen. Bis zu 20% des Gemaeuers wird auf diese Art und Weise beschaedigt. Der Silberpflock, den man in den Boden vor der jeweiligen Burg rammen muss, benoetigt $50. Dieser Akt provoziert die Elementargeister der Erde dazu, sich aufzubaeumen, und das umliegenden Gelaende samt Silberpflock aufzuwuehlen. Der Magier muss um diesen Spruch einzusetzen den Befehl ZAUBER DONNERBEBEN burg-nr verwenden. Die anderen Parteien werden den Magier identifizieren, wenn der Magier sich nicht gut genug tarnen kann.
+This spell shakes the earth and send tremmors through the entire region. It is cast at a building, wrecking up to 20% of the stoneworks. The spell is cast like this: 'CAST tremmor building-nr'. The silber staff used to call forth the tremmors costs about $50. If the mage is stealthy enough, no faction will notice who caused this little earthquake.
+
+[SUMMON_UNDEAD]
+Totenruf
+Summon Undead
+
+[SUMMON_UNDEAD_DATA]
+Die fuer $50 gekauften Zutaten, Weihrauch, Nachschatten Pilze und weisses Wolfshaar, werden zerrieben und an einer Vollmondnacht auf gluehenden Kohlen verdampft. In diesen Dampf hebe man seinen Kopf und stimme fuer eine Stunde lang ein finsteres Geheul an. Die Erde wird sich oeffnen und zwischen 10 und 50 Untote werden ihr entsteigen, und sich dem Nekromanten unterwerfen. Es soll allerdings nicht unterschlagen werden, dass Untote beschwoeren ein unheiliger, verfluchter Akt ist, und die Risiken nicht ganz abgeschaetzt werden koennen. Beim zaubern kann man - wenn man will - angeben, wie diese Aussehen sollen, mit: ZAUBER TOTENRUF \"name\" \"beschreibung\". Macht man dies nicht, wird durch Zufall bestimmt, wie die Untoten aussehen.
+definition missing
+
+[CONJURE_KNIGHTS]
+Schattenritter
+Shadow Knights
+
+[CONJURE_KNIGHTS_DATA]
+Zuerst muss man sich fuer $50 eine Drachenfusswurzel, drei Regenbogenpilze und ein gelbes Fliegenpilzmaennchen kaufen. Dies wird eingekocht und in einer engen Schwitzhuette auf die gluehenden Steine geleert. Langsam wird sich der Nebel zu 2 bis 20 Gestalten verdichten, und wenn die Schwitzhuette langsam abkuehlt, werden die Gestalten als Ritter zu erkennen sein. Diese werden dem Beschwoerer ein halbes Jahr lang zu Diensten sein. Beim zaubern kann man - wenn man will - auch angeben, wie diese Aussehen sollen, mit: ZAUBER SCHATTENRITTER \"name\" \"beschreibung\". Macht man dies nicht, wird durch Zufall bestimmt, wie die Illusionen aussehen. Die Schattenritter besitzen alle einen Speer, einen Plattenpanzer und ein Schlachtross. Anderen Parteien werden sie wie wahre Ritter erscheinen, doch wird man schnell erkennen, das sie keinerlei Gaben annehmen, weggeben, an keinen Kaempfen teilnehmen und sich auch sonst nicht wie richtige Menschen benehmen.
+definition missing
+
+[STORM_WINDS]
+Sturmwind
+Storm Winds
+
+[STORM_WINDS_DATA]
+Dies ist ein Ritual der Beschwoerung der Sturmgoetter. Das Ritual wird kurz vor der Abfahrt des Schiffes zelebriert. Der Magier stellt sich auf dem Deck des Schiffes - waehrend es noch im Hafen liegt - in einen gelben Zauberzirkel und verbrennt getrocknete Gewuerze. Mit einem monotonen Gesang lockt er die Heerscharen der Sturmgeister zu sich und stachelt sie zu einem tobenden Wirbeltanz auf. Je leiser er spricht, umso schriller pfeifen die Geister in seinen Ohren. Nach einer halben Stunde verstummt er ganz und deutet in die Richtung, in die das Schiff gejagt werden soll. Dann wirft er 5 goldene Dukaten (ca. $50) in die Luft. Mit wildem Gekreische schnappen sich die Sturmgeister das Gold - die Muenzen verschwinden mit einem Lichblitz - und innert Kuerze erhebt sich ein grosser Sturm, der das Schiff wie eine Feder vor sich hertreibt. Auf den Schwingen des Sturmes verdoppelt sich so die Geschwindigkeit des Schiffes fuer diesen Monat. Der Magier muss sich an Bord des Schiffes befinden, und das Schiff muss sich in einer Kuestenregion befinden, wenn dieser Spruch gezaubert wird.
+definition missing
+
+[FOG_WEBS]
+Nebelnetze
+Fog Webs
+
+[FOG_WEBS_DATA]
+Fuer das Ritual der Nebelnetze benoetigt man Silberfaden im Wert von $50, ein Spinnennetz der Grauen Tauspinne, und einen schwarzen Knollenblaetterpilz. Um den Pilz herum werden Spinnen- und Silberfaeden ausgebreitet, und im fruehen Morgennebel wird eine Inkantation der Wasserelemente begonnen. Bald verdichtet sich der Nebel zu solch dicken Schwaden, dass niemand mehr die Region verlassen kann. Die Region kann weiterhin betreten werden, es ist einfach nicht moeglich, die Region zu verlassen. Einheiten, welche die Region durchreisen wollen, verirren sich und bleiben in der Region stecken.
+definition missing
+
+[NIGHT_EYES]
+Auge der Nacht
+Night Eyes
+
+[NIGHT_EYES_DATA]
+Dieser Zauber erfordert einen $50 teuren, weiss schimmernden Opal. Dieser Stein wird waehrend einer Nacht in einer kleinen Schuessel mit Wasser gereinigt, waehrend man heilige Inkantationen ueber ihm murmelt. Am fruehen Morgen kann man sich diesen Opal dann in ein Auge druecken. Der Vorgang ist voellig schmerzlos - der Opal verschmilzt mit dem Auge. Waehrend 3 Monate besitzt der Magier nun das Talent Wahrnehmung 5. Der Magier darf in dieser Zeit allerdings keinen weiteren, laenger andauernden Zauberspruch auf sich zaubern.
+definition missing
+
+[WATER_WALKING]
+Wasserwandeln
+Water Walking
+
+[WATER_WALKING_DATA]
+Das Wunder des Wasserwandelns laesst sich durch eine strenge Meditation erwirken. Waehrend eines Monats versenkt sich der Magier in seine Meditation und streicht sich seine Fuesse mit heiliger Eichenblaetter Salbe jeden Tag die Fuesse ein. Die Salbe kostet $50. In den darauf folgenden vier Monaten kann der Adept nun auf Wasser wandern oder reiten. Der Adept darf in dieser Zeit allerdings keinen weiteren, laenger andauernden Zauberspruch auf sich zaubern.
+definition missing
+
+[MAKE_WINGED_HELMET]
+Erschaffe einen Helm der Sieben Winde
+Make Winged Helmet
+
+[MAKE_WINGED_HELMET_DATA]
+Der Zauber segnet einen kostbaren Helm (Kostenpunkt $400) mit der Rune der Sieben Winde: der Flaute, des Hauches, der Brise, des Windes, des Sturmes, des Orkans, und der Stille. Der Traeger des Helmes wird von den Sieben Winden geschuetzt, kein Uebel wiederfaehrt ihm, das Wetter beguenstigt ihn. Wenn er der Kapitaen eines kleinen Bootes ist, kann er statt drei Regionen deren neun pro Monat durchsegeln. Der Helm funktioniert nur in einem Boot (dem kleinsten Schiffstyp). Er funktioniert auf hoher See. In Kuestenregionen kann der Helm mit einem Sturmwind kombiniert werden. In diesem Monat koennen somit 18 Regionen durchsegelt werden. Der Helm hat kein nennenswertes Gewicht.
+This creates a helmet of the seven winds.  Any captain of a boat (the smallest type of ship) will by able to sail nine regions instead of three per month.  In a coastal region, this can be combined with the spell stormwind, enabling the captain to sail 18 regions in a month.  The helmet has no weight.
+
+[HAMMER]
+Hammer der Goetter
+Hammer of the Gods
+
+[HAMMER_DATA]
+Der Zauber benoetigt ein paar Naegel im Wert von $50. Diese werden schoen saeuberlich in den Boden gesteckt, und dann wird in einem mehrtaegigen Ritual der Zorn der Goetter beschworen. Am dreizehnten Tage wird ein Gewitter losbrechen, und Blitz wird zur Erde fallen, und der Hammer der Goetter wird niederfahren und die Region zermalmen. Die Region wird damit um einige hundert Meter abgesenkt...
+This spell requires iron nails worth $50. They are nailed into the ground a mighty ritual is invoked to insult the gods. After thirteen days a tempest will strike and the hammer of the gods will fall down mightily, crushing the region. The region will descend a few hundreds of meters.
+
+[PROVOCATION]
+Provokation der Titanen
+Titans' Provocation
+
+[PROVOCATION_DATA]
+Mit diesem Zauber koennen die Titanen der Unterwelt provoziert werden. Hierzu zertruemmert man einen langen Eichenstab im Wert von $50 und singt Spottlieder ueber die Titanen der Urzeit in der Alten Sprache. Alsbald werden sich die Titanen regen, in der Tiefe toben und an ihren ewigen Ketten reissen. Dies wird die Region permanent um einige hundert Meter anheben.  Dieser Zauberspruch kann sogar auf hoher See gezaubert werden!
+This spell requires an oak staff worth $50.  The mage breaks the staff abuses the old titans of the deep.  Soon enough the remnants of these old powers will rise in anger.  When the mage stops singing, the ground will have been lifted a few hundred meters, permanently.  This spell can be cast on the ocean!
+
+[BLESSING]
+Segen der Goettin
+Goddess' Blessing
+
+[BLESSING_DATA]
+Mit diesem Segen der Fruchtbarkeitsgoettin werden die Samen der Fruchtbarkeit gesaet, die Winde der Genesung gerufen und die Quellen der Huegel gesegnet. Falls sich der Priester, der dieses Ritual durchfuehrt, in einer Wuestenregion befindet, verwamdelt sich die Wueste in eine fruchtbare Ebene. Das Heilige Wasser kostet $50.
+This fertility spell lets the sun shine and the rain fall in equal measures, blessing the wells and trees. If the priest casting this spell finds himself in a desert region, the terrain will change into a fertile plain. The holy water required costs $50.
+
+[11]
+undefined spell
+undefined spell
+
+[11_DATA]
+undefined effect
+undefined effect
+
+[12]
+undefined spell
+undefined spell
+
+[12_DATA]
+undefined effect
+undefined effect
+
+[13]
+undefined spell
+undefined spell
+
+[13_DATA]
+undefined effect
+undefined effect
+
+[14]
+undefined spell
+undefined spell
+
+[14_DATA]
+undefined effect
+undefined effect
+
+[15]
+undefined spell
+undefined spell
+
+[15_DATA]
+undefined effect
+undefined effect
+
+[16]
+undefined spell
+undefined spell
+
+[16_DATA]
+undefined effect
+undefined effect
+
+[17]
+undefined spell
+undefined spell
+
+[17_DATA]
+undefined effect
+undefined effect
+
+# Zaubern
+
+[NEW_SPELLS]
+Erhaltene Zauber
+New Spells
+
+[LEVEL]
+Stufe %d0
+Level %d0
+
+[CANNOT_CAST]
+%s0 kann %s1 nicht zaubern
+%s0 can't cast %s1
+
+[CASTS]
+%s0 zaubert %s1.
+%s0 casts %s1.
+
+# Dieser Satz kann noch verlaengert und ausgebaut werden!
+[CASTS_IN_COMBAT]
+%s0 zaubert %s1
+%s0 casts %s1
+
+[BREAKS_THROUGH_MAGIC_SHIELD]
+ und bricht durch das gegnerische Magie-Schild
+ and breaks through the foe's magic shield
+
+[BUT_CANCELLED_BY_MAGIC_SHIELD]
+, doch der Zauber wird vom gegnerischen Magie-Schild abgelenkt!
+, but the spell is deflected by the foe's magic shield!
+
+[RESEARCHES]
+%s0 entdeckt den Spruch %s1.
+%s0 discovers the %s1 spell.
+
+[GIVE_SPELL]
+%s0 bringt %s1 den Zauber %s2 bei.
+%s0 teaches %s1 the %s2 spell.
+
+[SPELLS]
+Zauber: 
+spells: 
+
+[COMBAT_SPELLS]
+Kampfzauber: 
+combat spells: 
+
+[SET]
+gesetzt: 
+set: 
+
+[GOAL_UNIT_NOT_FOUND]
+Die Ziel-Einheit wurde nicht gefunden
+the goal unit was not found
+
+[GOAL_UNIT_HAS_NOT_CONTACTED_US]
+Die Ziel-Einheit hat keinen Kontakt mit uns aufgenommen
+the goal unit has not contacted us
+
+[GOAL_UNIT_ON_ANOTHER_PLANE]
+Die Ziel-Einheit befindet sich auf einer anderen Ebene
+the goal unit is on another plane
+
+# Kaempfen
+
+[ILLUSION_DISSOLVES]
+%s0 loesen sich auf.
+%s0 dissolve.
+
+[RECEIVES_LOOT]
+%s0 erobert 
+%s0 receives 
+
+# Listen, Mengen
+
+[QUANTITIY]
+%d0 %s1
+%d0 %s1
+
+[FIRST_QUANTITY_IN_LIST]
+%d0 %s1
+%d0 %s1
+
+[QUANTITY_IN_LIST]
+, %d0 %s1
+, %d0 %s1
+
+[LAST_QUANTITY_IN_LIST]
+ und %d0 %s1
+, and %d0 %s1
+
+# Geben
+
+[GIVE_PEASANTS_ITEMS]
+%s0 gibt den Bauern %d1 %s2.
+%s0 gives %d1 %s2 to the peasants.
+
+[GIVE_NOBODY_ITEMS]
+%s0 laesst %d1 %s2 zurueck.
+%s0 drops %d1 %s2.
+
+[GIVE_UNIT_ITEMS]
+%s0 gibt %d1 %s2 an %s3.
+%s0 gives %s3 %d1 %s2.
+
+[NO_MEN_TO_GIVE]
+In dieser Einheit gibt es niemanden, den man transferieren koennte
+there is nobody in the unit to transfer
+
+[MAX_MAGICIANS]
+Es kann maximal %d0 Magier pro Partei geben
+only %d0 mages allowed per faction
+
+[GIVE_MEN]
+%s0 transferiert %d1 zu %s2.
+%s0 transfers %d1 to %s2.
+
+[GIVE_MEN_TO_PEASANTS]
+%s0 entlaesst %d1.
+%s0 sends %d1 away.
+
+[GIVE_ALL_MEN_TO_PEASANTS]
+%s0 loest sich auf.
+%s0 dissolves.
+
+[GIVE_MEN_TO_NOTHING]
+%s0 richtet %d1 hin.
+%s0 kills %d1.
+
+[GIVE_ALL_MEN_TO_NOTHING]
+%s0 verschwinden eines Nachts auf raetselhafte Art und Weise und wird nie mehr gesehen.
+%s0 disappears one night and is never seen again.
+
+# Strassenbau
+
+[BUILDS_ROAD]
+%s0 baut in %s1 fuer %d2 %s3 Strassen und Bruecken.
+%s0 builds roads and bridges in %s1 using %d2 %s3.
+
+# Produktion
+
+[PRODUCES]
+%s0 produziert %d1 %s2.
+%s0 produces %d1 %s2.
+
+[PRODUCES_LESS]
+%s0 in %s1 produziert %d2 statt %d3 %s4.
+%s0 in %s1 produces %d2 instead of %d3 %s4.
+
+[SKILL_NEEDED_FOR_ITEM]
+%s0 machen benoetigt mindestens %s1 %d2
+Producing %s0 requires at least %s1 %d2
+
+[THIS_REQUIRES_ITEMS]
+Hierfuer braucht man mindestens %d0 %s1
+This requires at least %d0 %s1
+
+# Handel
+
+[BUYS]
+%s0 kauft fuer $%d1 %s2.
+%s0 buys %s2 $%d1.
+
+[SELLS]
+%s0 verkauft fuer $%d1 %s2.
+%s0 sells %s2 $%d1.
+
+[PEASANTS_DONT_TRADE_IN_IT]
+Die Bauern handeln nicht mit %s0
+The peasants don't trade in %s0
+
+[UNIT_HASNT_ANY]
+Die Einheit hat keine %s0
+The unit doesn't have any %s0
+
+[NO_MONEY]
+Die Einheit ist pleite
+the unit is broke
+
+[CURRENT_PRICES]
+Auf dem Markt gelten folgende Preise:
+Prices are
+
+[PRICES_WITHOUT_BUILDINGS]
+Mit einer Burg wuerden hier folgende Preise gelten:
+With a building in the region, prices would be:
+
+[FIRST_PRICE]
+ %s0 $%d1
+ %s0 $%d1
+
+[PRICE]
+, %s0 $%d1
+, %s0 $%d1
+
+[LAST_PRICE]
+ und %s0 $%d1
+, and %s0 $%d1
+
+[PEASANTS_MAKE]
+. Die Bauern produzieren %s0.
+. The peasants produce %s0.
+
+# Botschaften
+
+[CANNOT_FIND_UNIT_FOR_MAIL]
+Einheit %d0 wurde in %s1 nicht gefunden
+unit from faction %d0 was found in %s1
+
+[CANNOT_FIND_FACTION_FOR_MAIL]
+Es wurde keine Einheit der Partei %d0 in %s1 gefunden
+no unit from faction %d0 was found in %s1
+
+[CANNOT_DETERMINE_RECIPIENT]
+Der Empfaenger der Botschaft konnte nicht bestimmt werden
+the recipient could not be determined
+
+[MESSAGE_EMPTY]
+Die Botschaft enthaelt keinen Text
+there is no message text
+
+# Dies ist unabhaengig von der Region, in der die Botschaft abgeschickt wurde.
+
+[MESSAGE_FROM_FACTION]
+%s0 schickt eine Botschaft: '%s1'
+%s0 sends a message: '%s1'
+
+# Dies gilt fuer BOTSCHAFT AN EINHEIT und fuer BOTSCHAFT AN REGION --
+# die Empfaenger Einheit kann nicht mehr festgestellt werden.
+
+[MESSAGE_FROM_UNIT]
+%s0 in %s1 schickt eine Botschaft: '%s2'
+%s0 in %s1 sends a message: '%s2'
+
+[ANONYMOUS_MESSAGE_FROM_UNIT]
+In %s0 wurde eine anonyme Botschaft empfangen: '%s1'
+Anonymous message received in %s0: '%s1'
+
+
