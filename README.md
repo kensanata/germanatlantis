@@ -8,3 +8,6 @@ original
 Atlantis is a *Play By E-Mail* (PBEM) game. Thus, the software reads
 emails (concatenated plain text mails) from a file and produces a
 script that will send emails out to players.
+
+A different instance of this game has its source code
+[here](https://gitlab.com/german-atlantis/german-atlantis).
